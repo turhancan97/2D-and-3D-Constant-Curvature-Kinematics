@@ -44,6 +44,7 @@ T3 = trans_mat_cc(kappa3, l3);
 T3_cc = coupletransformations(T3,T2_tip);
 
 # Plot the trunk with three sections and point the section seperation
+plt.plot([-0.025, 0.025],[0,0],'black',linewidth=5)
 plt.scatter(T1_cc[0,12],T1_cc[0,13],linewidths=5,color = 'black',label="Section Seperation")
 plt.plot(T1_cc[:,12],T1_cc[:,13],'b',linewidth=3,label="First Section")
 plt.scatter(T1_cc[-1,12],T1_cc[-1,13],linewidths=5,color = 'black')
