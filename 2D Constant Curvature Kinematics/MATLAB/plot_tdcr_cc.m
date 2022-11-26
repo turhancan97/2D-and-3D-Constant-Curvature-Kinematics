@@ -5,6 +5,7 @@ function [ fig ] = plot_tdcr_cc( T1_cc,T2_cc,T3_cc)
     radius3=2;
 
     hold on;
+    plot([-0.02 0.02],[0 0],'Color','k','LineWidth', 5)
     plot(T3_cc(:,13),T3_cc(:,14),'LineWidth',radius3,'Color',[1 0 0]);
     plot(T2_cc(:,13),T2_cc(:,14),'LineWidth',radius2,'Color',[0 1 0]);
     plot(T1_cc(:,13),T1_cc(:,14),'LineWidth',radius1,'Color',[0 0 1]);
